@@ -1,21 +1,22 @@
 body {
    margin: 0px auto; 
    display: flex;
-   min-height: 100vh;
+   /* min-height: 100vh; */
    flex-direction: column;
+   font-family: 'Big Shoulders Text', cursive;
 }
 
 header {
     height: 100px;
 }
-
+/* 
 header > nav {
     height: 100%;
-}
+} */
 
 main {
     flex: 1 0 auto;
-    /* background-image:url("../../bg.jpg") !important; */
+    background-image:url("../../bg.jpg") !important;
 }
 
 main h1 {
@@ -28,12 +29,8 @@ main h1 {
 
 
 #logo {
-    margin-top: 20px;
-}
-
-#head-nav-links {
-    margin-right: 50px;
-    margin-top: 2000px;
+    margin-left:50px;
+    font-family: 'Nothing You Could Do', cursive, bold;
 }
 
 .mainpanel{
@@ -47,4 +44,10 @@ main h1 {
 
 .container {
     text-align: center !important;
+}
+
+@media only screen and (max-width: 992px) {
+    #logo {
+        margin-left:0px;
+    }
 }

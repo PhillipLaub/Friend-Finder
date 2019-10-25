@@ -1,5 +1,5 @@
 
-var friendsArray = [
+let friendsArray = [
 	{
 		name: 'Deadpool',
 		photo: 'https://miro.medium.com/max/3840/1*-4nkXQYN05ljzfJez_azbg.jpeg',

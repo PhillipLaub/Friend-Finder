@@ -1,6 +1,5 @@
 
-var path = require('path');
-var friends = require('../data/friends.js');
+let friends = require('../data/friends.js');
 
 module.exports = function(app) {
 	
@@ -10,17 +9,17 @@ module.exports = function(app) {
 
 	app.post('/api/friends', function(req, res) {
 		
-		var input = req.body;
-		var response = input.scores;
+		let input = req.body;
+		let response = input.scores;
 
-		var matchName = '';
-		var matchImage = '';
-		var totalDifference = 500; 
+		let matchName = '';
+		let matchImage = '';
+		let totalDifference = 500; 
 
-		for (var i = 0; i < friends.length; i++) {
+		for (let i = 0; i < friends.length; i++) {
 			
-			var diff = 0;
-			for (var j = 0; j < response.length; j++) {
+			let diff = 0;
+			for (let j = 0; j < response.length; j++) {
 				diff += Math.abs(friends[i].scores[j] - response[j]);
 			}
 			

@@ -1,10 +1,10 @@
 
-var express = require('express');
-var bodyParser = require('body-parser');
-var path = require('path');
+let express = require('express');
+let bodyParser = require('body-parser');
+let path = require('path');
 
-var app = express();
-var PORT = process.env.PORT || 8080;
+let app = express();
+let PORT = process.env.PORT || 8080;
 
 app.use(express.static(path.join(__dirname, './public')));
 
