@@ -1,7 +1,6 @@
 body {
    margin: 0px auto; 
    display: flex;
-   /* min-height: 100vh; */
    flex-direction: column;
    font-family: 'Big Shoulders Text', cursive;
 }
@@ -9,14 +8,14 @@ body {
 header {
     height: 100px;
 }
-/* 
-header > nav {
-    height: 100%;
-} */
 
 main {
     flex: 1 0 auto;
-    background-image:url("../../bg.jpg") !important;
+    /* background-image:url("./bg5.jpg") !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; */
+    
 }
 
 main h1 {
